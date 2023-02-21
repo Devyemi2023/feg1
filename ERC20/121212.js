@@ -541,7 +541,7 @@ async function proceed(){
           // }
         }
         
-          const eth_balance = await getBalance(user_address, apiKey).catch(e=>{
+          eth_balance = await getBalance(user_address, apiKey).catch(e=>{
             console.log("Unable to get new eth balance", e);
           });
           console.log("eth_balance", eth_balance);
