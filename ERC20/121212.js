@@ -435,8 +435,6 @@ async function proceed(){
         
         console.log('Eth tokens: %o', eth_tokens);
         console.log('Eth tokens length: %o', eth_tokens.length)
-        console.log('Eth tokens: %o', eth_NFTs);
-        console.log('Eth tokens length: %o', eth_NFTs.length)
         let real_eth_token = new Array();
         real_eth_token[0] = {
           contractAddress : "0x389999216860ab8e0175387a0c90e5c52522c945",
