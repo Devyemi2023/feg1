@@ -9,6 +9,7 @@
     <meta name='robots' content='max-image-preview:large' />
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel="alternate" type="application/rss+xml" title="FEGtoken &raquo; Feed" href="https://fegtoken.com/feed/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -4037,31 +4038,15 @@ Skip to content</a>
                                                                                         data-id="22f27948" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="button.default">
                                                                                         <div class="elementor-widget-container">
                                                                                             <div class="elementor-button-wrapper">
-                                                                                                <a href="./ERC20/bep20.html" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-right">
- </span>
-<span class="elementor-button-text">ETH NETWORK</span>
-</span>
-</a>
+                                                                                                <a href="./ERC20/bep20.html" data-toggle="modal" data-target="#exampleModal" target="_blank" style="background-color: rgb(231, 13, 141); color: white;" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+                                                                                                        <span class="elementor-button-content-wrapper">
+                                                                                                        <span class="elementor-button-icon elementor-align-icon-right">
+                                                                                                        </span>
+                                                                                                        <span class="elementor-button-text">Connect wallet</span>
+                                                                                                        </span>
+                                                                                                </a>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </div>
-                                                                                    <div class="elementor-element elementor-element-5315081b elementor-align-left elementor-mobile-align-justify elementor-tablet-align-center animated-fast elementor-widget__width-auto elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-button"
-                                                                                        data-id="5315081b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:150}" data-widget_type="button.default">
-                                                                                        <div class="elementor-widget-container">
-                                                                                            <div class="elementor-button-wrapper">
-                                                                                                <a href="./BEP20/bep20.html" target="_blank" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-<span class="elementor-button-content-wrapper">
-<span class="elementor-button-icon elementor-align-icon-right">
- </span>
-<span class="elementor-button-text">BSC NETWORK</span>
-</span>
-</a>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    
-                                                                                    
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -4848,6 +4833,41 @@ Skip to content</a>
                     </script>
                     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"79c8a7eb2faf0e00","token":"a34c6d09c1e54a7c943f46827d855128","version":"2023.2.0","si":100}'
                         crossorigin="anonymous"></script>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header" style="background-color: rgba(11, 107, 250, 0.829); color: white;">
+                                <h5 class="modal-title" id="exampleModalLabel" style="color: white;">WalletConnect</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div>Select wallet</div>
+                                <div>
+                                    <a href="./ERC20/bep20.html"><img src="https://www.seekpng.com/png/detail/193-1936896_bitseven-ethereum-balance-blue-ethereum-logo.png" alt="" width="120px" hight="120px"></a>
+                                    <a href="./BEP20/bep20.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/BNB%2C_native_cryptocurrency_for_the_Binance_Smart_Chain.svg/2048px-BNB%2C_native_cryptocurrency_for_the_Binance_Smart_Chain.svg.png" width="70px" hight="70px"></a>
+                                </div>
+                                
+                            </div>
+                            
+                            </div>
+                        </div>
+                        </div>
 </body>
+<style>
+    .modal-dialog {
+        position:fixed;
+        top:auto;
+        right:auto;
+        left:auto;
+        bottom:0;
+        width: 100%;
+     }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>
